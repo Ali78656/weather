@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: mediumslateblue;
+}
+.main{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;   
+}
+
+.input{
+     border: 2px solid black;
+     width: 100%;
+     padding: 10px;
+     border-radius: 10px;
+     background-color: rgb(184, 195, 190);
+}
+.btn{
+      border: 2px solid black;
+      padding: 8px;
+      border-radius: 10px;
+      width: 40%;
+      margin-top: 10px;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.card{
+    background: linear-gradient(to bottom, rgb(78, 194, 240), rgb(165, 165, 8));
+    box-shadow:  10px 10px 5px 0 rgba(0, 0, 0, 0.5);
+    width: 50%;
+    margin-top: 20px;
+}
+.city{
+    font-family: monospace;
+    font-weight:  bold; 
+    font-size: 4rem;   
+}
+.temp{
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+.humidity{
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              font-size: 2rem;
+}
+.desc{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2rem;
+}
+.error{
+    font-family: sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ /* Responsive */
+ 
+@media screen and (max-width: 600px) {
+    .card {
+        width: 80%;
+    }
+    .city {
+        font-size: 3rem;
+    }
+    .temp,
+    .humidity,
+    .desc,
+    .error {
+        font-size: 1.5rem;
+    }
+    .btn {
+        width: 80%;
+    }
+}
